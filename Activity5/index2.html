@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="post-form.js"></script>
+    <title>Assignment 5 AJAX</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <label>Enter your name and age</label>
+            <fieldset>
+                <label>Name:</label>
+                <input type="text" name="name" id="name" />
+                <label>Age:</label>
+                <input type="text" name="age" id="age"/>
+                <input type="submit" value="Submit" id="submit-info" />
+            </fieldset>
+        </form>
+        <div>
+            <h5>Response Data</h5>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td id="nameResponse"></td>
+                </tr>
+                <tr>
+                    <td>Age: </td>
+                    <td id="ageResponse"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

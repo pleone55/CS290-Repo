@@ -1,0 +1,31 @@
+<h1>Post Request Received</h1>
+
+{{#if queryList.length}}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        {{#each queryList}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.value}}</td>
+            </tr>
+        {{/each}}
+    </table>
+{{/if}}
+
+{{#if bodyList.length}}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        {{#each bodyList}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.value}}</td>
+            </tr>
+        {{/each}}
+    </table>
+{{/if}}

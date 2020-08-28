@@ -1,0 +1,31 @@
+<h2>Add Workout</h2>
+<form id="add-form">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="insert-name" placeholder="Name">
+    </div>
+    <div>
+        <label for="reps">Reps: </label>
+        <input type="text" name="reps" class="num-input" id="insert-reps" placeholder="Reps">
+    </div>
+    <div>
+        <label for="weight">Weight: </label>
+        <input type="text" name="weight" id="insert-weight" class="num-input" placeholder="Weight">
+    </div>
+    <div>
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="insert-date" placeholder="Date">
+    </div>
+    <div>
+        <label for="unit">Unit: </label>
+        <input id="insert-unit" type="radio" name="unit" value="1" checked>lbs
+        <input type="radio" name="unit" value="0">kgs
+    </div>
+    <input type="submit" name="Add Workout" value="Add Workout" id="add-exercise">
+</form>
+
+<!--Display the table after adding or editing -->
+
+<h3>Completed Exercies</h3>
+<div id="workout-table"></div>
+<script src="script.js"></script>
